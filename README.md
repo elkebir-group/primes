@@ -33,8 +33,10 @@ The output for the `analyze` mode of the code is a CSV file that contains statis
                               [--condmeta CONDMETA] [--analyze]
                               [--inprobe INPROBE] [--outanalysis OUTANALYSIS]
                               [--outprobemeta OUTPROBEMETA] [--outhtml OUTHTML]
-                              [--startdate STARTDATE] [--plot]
-                              [--inanalysis INANALYSIS] [--prefix PREFIX]
+                              [--country COUNTRY] [--startdate STARTDATE]
+                              [--enddate ENDDATE] [--plot]
+                              [--inanalysis INANALYSIS]
+                              [--inprobemeta INPROBEMETA] [--prefix PREFIX]
 
     optional arguments:
       -h, --help            show this help message and exit
@@ -53,12 +55,18 @@ The output for the `analyze` mode of the code is a CSV file that contains statis
                             output csv file with probing results along with
                             metadata
       --outhtml OUTHTML     output html file with anlaysis results
+      --country COUNTRY     focus on a specific country for analysis
       --startdate STARTDATE
                             date (YYYY-MM-DD) after which the analysis should be
                             performed [2020-12-01]
+      --enddate ENDDATE     date (YYYY-MM-DD) until which the analysis should be
+                            performed [last entry in the metadata file]
       --plot                plot the analysis results
       --inanalysis INANALYSIS
                             csv file with analysis results
+      --inprobemeta INPROBEMETA
+                            csv file with probing results along with metadata
+                            (output of analyze mode)
       --prefix PREFIX       prefix for output files of plotting
 
 ### Example    
